@@ -1,0 +1,27 @@
+.karty {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.karty .card {
+    height: 100%;
+}
+
+.karty .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; 
+}
+
+@media (max-width: 992px) {
+    .karty {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .karty {
+        grid-template-columns: 1fr;
+    }
+}
